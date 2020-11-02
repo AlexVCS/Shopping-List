@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const AddItem = () => {
     return (
         <div className="addItemContainer">
-            <input type="text"/>
-            <button class="addButton">Add New Item</button>
+            <input className="itemField" type="text"/>
+            <button onClick={console.log(document.getElementsByClassName('itemField').textContent)} className="addButton">Add New Item</button>
         </div>
     )
 }

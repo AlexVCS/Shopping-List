@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.scss';
-import AddItem from './components/addItem';
-import List from './components/list';
+import './scss/App.scss';
+import AddItem from './components/AddItem';
+import List from './components/List';
 
 function App() {
   return (

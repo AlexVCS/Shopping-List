@@ -1,3 +1,5 @@
+@import './core/core';
+
 * {
   margin: 0;
   padding: 0;
@@ -44,4 +46,27 @@
 
 .list {
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  .item {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: $brkpoint-mobile) {
+  .addItemContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .addItemContainer input {
+    width: 8rem;
+    margin-bottom: 5px;
+  }
+
+  .addItemContainer .addButton {
+    margin-left: 0;
+    width: 8rem;
+  }
 }
